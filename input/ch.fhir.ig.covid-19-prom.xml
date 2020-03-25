@@ -43,6 +43,16 @@
       <description value="Example for Patient"/>
       <exampleCanonical value="StructureDefinition/covid-19-prom-patient"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/obs-coughing"/>
+      </reference>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/obs-temperature"/>
+      </reference>
+    </resource>
 
     <!-- References to structure definitions -->
     <resource>

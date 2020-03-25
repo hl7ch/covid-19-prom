@@ -1,0 +1,32 @@
+{
+    "resourceType": "Observation",
+    "id": "obs-temperature",
+    "status": "preliminary",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/observation-category",
+					"code": "vital-signs",
+					"display": "Vital Signs"
+				}
+			]
+		}
+	],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "8310-5",
+                "display": "Körpertemperatur"
+            }
+        ]
+    },
+    "effectiveDateTime": "2020-03-04T06:40:29.000Z",
+    "valueQuantity": {
+        "value": 36.14,
+        "unit": "°C",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "resourceType": "Observation",
+    "id": "obs-coughing",
+    "status": "preliminary",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "272039006",
+                "display": "coughing finding"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/observation-category",
+                    "code": "survey",
+                    "display": "Survey"
+                }
+            ]
+        }
+    ],
+    "effectiveDateTime": "1977-04-22T01:00:00+01:00",
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "162470006",
+                "display": "Symptom severe (finding)"
+            }
+        ],
+        "text": "Symptom severity (finding)"
+    }
+}

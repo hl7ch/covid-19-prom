@@ -1,6 +1,6 @@
 {
     "resourceType": "Observation",
-    "id": "obs-coughing",
+    "id": "obs-paininthroat",
     "meta": {
         "profile": [
             "http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"
@@ -22,23 +22,22 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "49727002",
-                "display": "Cough (finding)"
+                "code": "162397003",
+                "display": "Pain in throat (finding)"
             }
         ]
     },
     "subject": {
-        "reference": "Patient/FranzMuster"
+        "reference" : "Patient/FranzMuster"
     },
     "effectiveDateTime": "2020-03-04T06:40:29.000Z",
     "valueCodeableConcept": {
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "24484000",
-                "display": "Severe (severity modifier) (qualifier value)"
+                "code": "255604002",
+                "display": "Mild (qualifier value)"
             }
-        ],
-        "text": "Symptom severity (finding)"
+        ]
     }
 }

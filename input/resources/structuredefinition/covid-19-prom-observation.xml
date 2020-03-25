@@ -1,0 +1,104 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="covid-19-prom-observation"/>
+   <url value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"/>
+   <version value="0.0.1"/>
+   <name value="Covid19PromObservation"/>
+   <title value="Observation Profile for covid-19 patient reported outcomes"/>
+   <status value="draft"/>
+   <experimental value="false"/>
+   <publisher value="HL7 Switzerland"/>
+   <description value="Definition of the observation"/>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="Observation"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Observation">
+         <path value="Observation"/>
+         <short value="Observation Profile for covid-19 patient reported outcome"/>
+      </element>
+      <element id="Observation.status">
+         <path value="Observation.status"/>
+         <mapping>
+            <identity value="cda"/>
+            <map value=".statusCode"/>
+         </mapping>
+      </element>
+      <element id="Observation.category">
+         <path value="Observation.category"/>
+         <short value="Classification of  type of observation"/>
+         <definition value="A code that classifies the general type of observation being made."/>
+         <requirements value="Used for filtering what observations are retrieved and displayed."/>
+         <min value="1"/>
+         <patternCodeableConcept>
+            <coding>
+               <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+               <code value="survey"/>
+               <display value="Survey"/>
+            </coding>
+         </patternCodeableConcept>
+      </element>
+  <element id="Observation.code">
+      <path value="Observation.code"/> 
+      <short value="Type of observation (code / type)"/> 
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;."/> 
+      <alias value="Name"/> 
+      <min value="1"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="CodeableConcept"/> 
+      </type> 
+      <isSummary value="true"/> 
+      <binding> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationCode"/> 
+        </extension> 
+        <strength value="extensible"/> 
+        <description value="Codes identifying names of simple observations."/> 
+        <valueSet value="http://fhir.ch/ig/covid-19-prom/ValueSet/covid-19-prom"/> 
+      </binding>  
+    </element>       
+      <element id="Observation.subject">
+         <path value="Observation.subject"/>
+         <short value="Patient"/>
+         <min value="1"/>
+         <type>
+            <code value="Reference"/>
+         </type>
+      </element>
+      <element id="Observation.subject.reference">
+         <path value="Observation.subject.reference"/>
+         <min value="1"/>
+      </element>
+      <element id="Observation.effectiveDateTime">
+         <path value="Observation.effectiveDateTime"/>
+         <short value="Effective Time"/>
+         <min value="1"/>
+      </element>
+      <element id="Observation.value[x]">
+         <path value="Observation.value[x]"/>
+         <short value="Actual result"/>
+         <definition value="The information determined as a result of making the observation, if the information has
+       a simple value."/>
+         <comment value="An observation may have; 1)  a single value here, 2)  both a value and a set of related
+       or component values,  or 3)  only a set of related or component values. If a value is
+       present, the datatype for this element should be determined by Observation.code.  A CodeableConcept
+       with just a text would be used instead of a string if the field was usually coded, or
+       if the type associated with the Observation.code defines a coded value.  For additional
+       guidance, see the [Notes section](observation.html#notes) below."/>
+         <requirements value="An observation exists to have a value, though it might not if it is in error, or if it
+       represents a group of observations."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <binding>
+            <strength value="required"/>
+            <description value="Severity of the patient reported outcome symptpm"/>
+            <valueSet value="http://fhir.ch/ig/covid-19-prom/ValueSet/observation-severity"/>
+         </binding>
+      </element>
+   </differential>
+</StructureDefinition>

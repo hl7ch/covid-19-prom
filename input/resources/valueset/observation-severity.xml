@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="observation-severity"/>
+   <url value="http://fhir.ch/ig/covid-19-prom/ValueSet/observation-severity"/>
+   <name value="ObservationSeverity"/>
+   <title value="Observation Severity Categorization"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7 Switzerland"/>
+   <contact>
+      <name value="HL7 Switzerland"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.hl7.ch/"/>
+      </telecom>
+   </contact>
+   <description value="Categorization of answers of patient report outcome observations"/>
+   <immutable value="false"/>
+   <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+   <compose>
+      <include>
+         <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="260413007"/>
+            <display value="None (qualifier value)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="keine"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="TODO"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="255604002"/>
+            <display value="Mild (qualifier value)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="leicht"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="TODO"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="6736007"/>
+            <display value="Moderate (severity modifier) (qualifier value)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="mittel"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="TODO"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="24484000"/>
+            <display value="Severe (severity modifier) (qualifier value)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="stark"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="TODO"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

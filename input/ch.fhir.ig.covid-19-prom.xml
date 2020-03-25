@@ -47,17 +47,102 @@
       <reference>
         <reference value="Observation/obs-coughing"/>
       </reference>
+      <name value="Coughing Observation"/>
+      <description value="Coughing Observation - Severe"/>
+      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/obs-diarrhea"/>
+      </reference>
+      <name value="Diarrhea Observation"/>
+      <description value="Diarrhea Observation - Mild"/>
+      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/obs-fatigue"/>
+      </reference>
+      <name value="Fatigue Observation"/>
+      <description value="Fatigue Observation - None"/>
+      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/obs-headache"/>
+      </reference>
+      <name value="Headache Observation"/>
+      <description value="Headache Observation - None"/>
+      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/obs-lossofsmell"/>
+      </reference>
+      <name value="Loss of smell Observation"/>
+      <description value="Loss of smell Observation - Mild"/>
+      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/obs-nausea"/>
+      </reference>
+      <name value="Nausea Observation"/>
+      <description value="Nausea Observation - Mild"/>
+      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/obs-paininthroat"/>
+      </reference>
+      <name value="Pain in throat Observation"/>
+      <description value="Pain in throat - Mild"/>
+      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/obs-shortnessofbreath"/>
+      </reference>
+      <name value="Shortness of breath Observation"/>
+      <description value="Shortness of breath  - Moderate"/>
+      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
     </resource>
     <resource>
       <reference>
         <reference value="Observation/obs-temperature"/>
       </reference>
+      <name value="Body Temperature Observation"/>
+      <description value="Body Temperature  - 36.5 °C"/>
     </resource>
-
+    <resource>
+      <reference>
+        <reference value="Observation/obs-temperature-unknown"/>
+      </reference>
+      <name value="Body Temperature Observation"/>
+      <description value="Body Temperature  - unknown"/>
+    </resource>
     <!-- References to structure definitions -->
     <resource>
       <reference>
         <reference value="StructureDefinition/covid-19-prom-patient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/covid-19-prom-observation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/covid-19-prom"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/observation-severity"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

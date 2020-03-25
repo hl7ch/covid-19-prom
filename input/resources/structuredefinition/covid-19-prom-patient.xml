@@ -7,12 +7,12 @@
     <title value="COVID-19 PROM Patient Profile"/>
     <status value="draft"/>
     <date value="2020-03-24"/>
-    <publisher value="ahdis ag"/>
+    <publisher value="HL7 Switzerland"/>
     <contact>
-        <name value="ahdis ag"/>
+        <name value="HL7 Switzerland"/>
         <telecom>
             <system value="url"/>
-            <value value="http://www.ahdis.ch/"/>
+            <value value="http://www.hl7.ch/"/>
         </telecom>
     </contact>
     <description value="Definition of the patient profile"/>

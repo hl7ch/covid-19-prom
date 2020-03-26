@@ -28,7 +28,7 @@
         ]
     },
     "subject": {
-        "reference": "Patient/FranzMuster"
+        "reference": "Patient/ElisabethBroennimannByBFH"
     },
     "effectiveDateTime": "2020-03-04T06:40:29.000Z",
     "valueCodeableConcept": {
@@ -38,7 +38,6 @@
                 "code": "24484000",
                 "display": "Severe (severity modifier) (qualifier value)"
             }
-        ],
-        "text": "Symptom severity (finding)"
+        ]
     }
 }

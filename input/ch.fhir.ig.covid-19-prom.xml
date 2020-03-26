@@ -37,9 +37,9 @@
     <!-- References to examples -->
     <resource>
       <reference>
-        <reference value="Patient/FranzMuster"/>
+        <reference value="Patient/ElisabethBroennimannByBFH"/>
       </reference>
-      <name value="FranzMuster"/>
+      <name value="ElisabethBroennimannByBFH"/>
       <description value="Example for Patient"/>
       <exampleCanonical value="StructureDefinition/covid-19-prom-patient"/>
     </resource>

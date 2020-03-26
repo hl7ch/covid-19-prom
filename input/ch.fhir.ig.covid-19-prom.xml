@@ -37,6 +37,14 @@
     <!-- References to examples -->
     <resource>
       <reference>
+        <reference value="Composition/surveybroennimann"/>
+      </reference>
+      <name value="Survey Broennimann"/>
+      <description value="Survey of symptoms/outcomes for Broennimann"/>
+      <exampleCanonical value="StructureDefinition/covid-19-prom-composition"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/ElisabethBroennimannByBFH"/>
       </reference>
       <name value="ElisabethBroennimannByBFH"/>
@@ -124,10 +132,16 @@
     <!-- References to structure definitions -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/covid-19-prom-patient"/>
+        <reference value="StructureDefinition/covid-19-prom-composition"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/covid-19-prom-patient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>    
     <resource>
       <reference>
         <reference value="StructureDefinition/covid-19-prom-observation"/>

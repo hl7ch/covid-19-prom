@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+    <id value="surveybroennimann"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-composition"/>
+    </meta>
+    <language value="de-CH"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="89196-0"/>
+            <display value="Patient reported outcome measure panel"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/ElisabethBroennimannByBFH"/>
+    </subject>
+    <date value="2020-03-04T06:40:29.000Z"/>
+    <author>
+        <reference value="Patient/ElisabethBroennimannByBFH"/>
+    </author>
+    <title value="Covid 19 - Patient reported outcomes"/>
+    <confidentiality value="N" />
+    <section>
+        <title value="Symptome"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <table>
+                    <tr>
+                        <td>Temperatur</td>
+                        <td>36.5°</td>
+                    </tr>
+                    <tr>
+                        <td>Husten</td>
+                        <td>+++</td>
+                    </tr>
+                    <tr>
+                        <td>Müdigkeit</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Halsschmerzen</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>Atemnot in Ruhe</td>
+                        <td>++</td>
+                    </tr>
+                    <tr>
+                        <td>Kopfschmerzen</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Durchfall</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>Übelkeit</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>Geruchsverlust</td>
+                        <td>++</td>
+                    </tr>
+                </table>
+            </div>
+        </text>
+        <entry>
+            <reference value="Observation/obs-temperature"/>
+        </entry>
+        <entry>
+            <reference value="Observation/obs-coughing"/>
+        </entry>
+        <entry>
+            <reference value="Observation/obs-fatigue"/>
+        </entry>
+        <entry>
+            <reference value="Observation/obs-paininthroat"/>
+        </entry>
+        <entry>
+            <reference value="Observation/obs-shortnessofbreath"/>
+        </entry>
+        <entry>
+            <reference value="Observation/obs-headache"/>
+        </entry>
+        <entry>
+            <reference value="Observation/obs-diarrhea"/>
+        </entry>
+        <entry>
+            <reference value="Observation/obs-nausea"/>
+        </entry>
+        <entry>
+            <reference value="Observation/obs-lossofsmell"/>
+        </entry>
+    </section>
+</Composition>

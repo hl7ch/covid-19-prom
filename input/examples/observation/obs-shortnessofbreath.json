@@ -22,8 +22,8 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "267036007",
-                "display": "Dyspnea (finding)"
+                "code": "161941007",
+                "display": "Dyspnea at rest (finding)"
             }
         ]
     },

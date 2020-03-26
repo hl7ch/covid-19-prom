@@ -69,8 +69,8 @@
             </designation>
          </concept>
          <concept>
-            <code value="267036007"/>
-            <display value="Dyspnea (finding)"/>
+            <code value="161941007"/>
+            <display value="Dyspnea at rest (finding)"/>
             <designation>
                <language value="de-CH"/>
                <value value="Atemnot in Ruhe"/>

@@ -29,7 +29,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="TODO"/>
+               <value value="aucun"/>
             </designation>
          </concept>
          <concept>
@@ -41,7 +41,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="TODO"/>
+               <value value="léger"/>
             </designation>
          </concept>
          <concept>
@@ -53,7 +53,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="TODO"/>
+               <value value="moyen"/>
             </designation>
          </concept>
          <concept>
@@ -65,7 +65,7 @@
             </designation>
             <designation>
                <language value="fr-CH"/>
-               <value value="TODO"/>
+               <value value="fort"/>
             </designation>
          </concept>
       </include>

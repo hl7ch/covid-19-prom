@@ -129,6 +129,20 @@
       <name value="Body Temperature Observation"/>
       <description value="Body Temperature  - unknown"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/questionnaire-corona-science-currentstate"/>
+      </reference>
+      <name value="Questionnaire Corona Science Current State"/>
+      <description value="CoronaScience Fragebogen: Aktuelle Befindlichkeit (Deutsch)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/questionnaireresponse-corona-science-currentstate"/>
+      </reference>
+      <name value="QuestionnairerResponse Corona Science Current State"/>
+      <description value="CoronaScience Antwort Fragebogen: Aktuelle Befindlichkeit (Deutsch)"/>
+    </resource>
     <!-- References to structure definitions -->
     <resource>
       <reference>

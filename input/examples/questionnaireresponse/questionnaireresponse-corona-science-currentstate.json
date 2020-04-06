@@ -1,0 +1,99 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"id": "questionnaireresponse-corona-science-currentstate",
+// würde das nas nicht ales extension machen	
+// "extension": [
+//		{
+//			"url": "http://midata.coop/extensions/response-code",
+//			"valueCoding": {
+//				"system": "http://loinc.org",
+//				"code": "89196-0",
+//				"display": "Patient reported outcome measure panel"
+//			}
+//		}
+//	],
+    "questionnaire": "http://fhir.ch/ig/covid-19-prom/Questionnaire/questionnaire-corona-science-currentstate",
+	"status": "completed",
+	"authored": "2020-04-03T11:11:02.984Z",
+	"item": [
+		{
+			"linkId": "Q1",
+			"text": "Hast du den Verdacht, am Coronavirus zu leiden?",
+			"answer": [
+				{
+					"valueBoolean": true
+				}
+			]
+		},
+		{
+			"linkId": "Q2",
+			"text": "Wurdest du auf das Coronavirus getestet?",
+			"answer": [
+				{
+					"valueBoolean": true
+				}
+			]
+		},
+		{
+			"linkId": "Q3",
+			"text": "Wie lautet das Testergebnis?",
+			"answer": [
+				{
+					"valueString": "negative"
+				}
+			]
+		},
+		{
+			"linkId": "Q4",
+			"text": "Ist jemand in deinem nahen Umfeld mit dem Coronavirus angesteckt?",
+			"answer": [
+				{
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"linkId": "Q5",
+			"text": "Hast du eine Arztpraxis oder eine Notfallaufnahme kontaktiert?",
+			"answer": [
+				{
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"linkId": "Q6",
+			"text": "Wie geht es dir?",
+			"answer": [
+				{
+					"valueString": "eher gut"
+				}
+			]
+		},
+		{
+			"linkId": "Q7",
+			"text": "Ich mache mir Sorgen über...",
+			"answer": [
+				{
+					"valueString": "Familie"
+				},
+				{
+					"valueString": "Finanzen"
+				}
+			]
+		},
+		{
+			"linkId": "Q8",
+			"text": "Ich gehe nach draussen...",
+			"answer": [
+				{
+					"valueString": "mehrmals pro Woche"
+				}
+			]
+		},
+		{
+			"linkId": "Q9",
+			"text": "Ich fühle mich..."
+		}
+	]
+}

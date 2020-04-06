@@ -1,0 +1,147 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "date": "2020-04-05T12:30:08Z",
+  "id": "questionnaire-corona-science-currentstate",
+  "url": "http://fhir.ch/ig/covid-19-prom/Questionnaire/questionnaire-corona-science-currentstate",
+  "version": "0.1.0",
+//  ,
+//  "meta": {
+//    "profile": [
+//      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire"
+//    ]
+//  },
+  "title": "CoronaScience Fragebogen: Aktuelle Befindlichkeit (Deutsch)",
+  // Mehrsprachigkeit ist nicht unterstützt, oder? -> Questionnaires für jede Sprache abbilden
+  "name": "CoronaScienceCurrentState_de",
+  "code": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "840539006",
+      "display": "COVID-19"
+    }
+  ],
+  "subjectType": [
+    "Patient",
+    "Person"
+  ],
+  // Frage: tritt als Publisher auf?
+  "publisher": "CoronaScience.ch",
+  "item": [
+    {
+      "linkId": "Q1",
+      "text": "Hast du den Verdacht, am Coronavirus zu leiden?",
+      "type": "boolean",
+      "repeats": false
+    },
+    {
+      "linkId": "Q2",
+      "text": "Wurdest du auf das Coronavirus getestet?",
+      "type": "boolean",
+      "repeats": false
+    },
+    {
+      "linkId": "Q3",
+      "text": "Wie lautet das Testergebnis?",
+      "type": "choice",
+      "repeats": false,
+      "enableWhen": [
+        {
+          "question": "Q2",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ],
+      "answerOption": [ 
+// diese Antwortoptionen könnte man vermutlich auch per SNOMED codieren (und entsprechend zusätzlich als Resource speichern?)
+        {
+          "valueString": "positiv"
+        },
+        {
+          "valueString": "negativ"
+        },
+        {
+          "valueString": "ausstehend"
+        }
+      ]
+    },
+    {
+      "linkId": "Q4",
+      "prefix": "4",
+      "text": "Ist jemand in deinem nahen Umfeld mit dem Coronavirus angesteckt?",
+      "type": "boolean",
+      "repeats": false
+    },
+    {
+      "linkId": "Q5",
+      "text": "Hast du eine Arztpraxis oder eine Notfallaufnahme kontaktiert?",
+      "type": "boolean",
+      "repeats": false
+    },
+    {
+      "linkId": "Q6",
+      "text": "Wie geht es dir?",
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "schlecht"
+        },
+        {
+          "valueString": "eher schlecht"
+        },
+        {
+          "valueString": "eher gut"
+        },
+        {
+          "valueString": "gut"
+        }
+      ]
+    },
+    {
+      "linkId": "Q7",
+      "text": "Ich mache mir Sorgen über...",
+      "type": "choice",
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueString": "nichts" 
+// (wie) können wir codieren dass diese Option nicht mit den anderen kompatibel ist?
+        },
+        {
+          "valueString": "Familie"
+        },
+        {
+          "valueString": "Finanzen"
+        },
+        {
+          "valueString": "Zukunft"
+        },
+        {
+          "valueString": "Gesundheit"
+        }
+      ]
+    },
+    {
+      "linkId": "Q8",
+      "text": "Ich gehe nach draussen...",
+      "type": "choice",
+      "repeats": false,
+      "answerOption": [
+        {
+          "valueString": "nie"
+        },
+        {
+          "valueString": "einmal pro Woche"
+        },
+        {
+          "valueString": "mehrmals pro Tag"
+        },
+        {
+          "valueString": "mehrmals pro Woche"
+        }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,6 @@
   //    ]
   //  },
   "title": "CoronaScience Fragebogen: Aktuelle Befindlichkeit (Deutsch)",
-  // Mehrsprachigkeit ist nicht unterstützt, oder? -> Questionnaires für jede Sprache abbilden
   "name": "CoronaScienceCurrentState_de",
   "code": [
     {
@@ -48,7 +47,8 @@
           }
         ]
       },
-      "type": "boolean",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow",
+      "type": "choice",
       "repeats": false
     },
     {

@@ -48,6 +48,8 @@
         ]
       },
       "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow",
+      // OE: answerValueSet insead of boolean
+      // OE: alternativ mit SNOMED CT, drittes Elemnt müsste aber noch erweitert werden https://covid-19-ig.logicahealth.org/ValueSet-yes-no-vs.html
       "type": "choice",
       "repeats": false
     },
@@ -56,6 +58,7 @@
       "text": "Wurdest du auf das Coronavirus getestet?",
       "type": "boolean",
       "repeats": false
+      // OE: modify to Q1?
     },
     {
       "linkId": "Q3",
@@ -71,6 +74,10 @@
       ],
       "answerOption": [
         // diese Antwortoptionen könnte man vermutlich auch per SNOMED codieren (und entsprechend zusätzlich als Resource speichern?)
+        // OE: das sollte auch ein ValueSet sein wegen Übersetzung aber auch für die Semantik
+        // https://covid-19-ig.logicahealth.org/ValueSet-covid19-pos-neg-vs.html
+        // 10828004	Positive (qualifier value)	260385009	Negative (qualifier value)	
+        // SNOMED qualifiere für ausstehend?
         {
           "valueString": "positiv"
         },
@@ -88,12 +95,14 @@
       "text": "Ist jemand in deinem nahen Umfeld mit dem Coronavirus angesteckt?",
       "type": "boolean",
       "repeats": false
+      // OE: answerValueSet insead of boolean
     },
     {
       "linkId": "Q5",
       "text": "Hast du eine Arztpraxis oder eine Notfallaufnahme kontaktiert?",
       "type": "boolean",
       "repeats": false
+      // OE: answerValueSet insead of boolean
     },
     {
       "linkId": "Q6",
@@ -115,6 +124,7 @@
           "valueString": "gut"
         }
       ]
+      // OE: answerValueSet insead of string
     },
     {
       "linkId": "Q7",
@@ -125,6 +135,7 @@
         {
           "valueString": "nichts"
           // (wie) können wir codieren dass diese Option nicht mit den anderen kompatibel ist?
+          // OE: glabue dies ist nicht direkt möglich
         },
         {
           "valueString": "Familie"
@@ -139,6 +150,7 @@
           "valueString": "Gesundheit"
         }
       ]
+      // OE: answerValueSet insead of string
     },
     {
       "linkId": "Q8",
@@ -159,6 +171,7 @@
           "valueString": "mehrmals pro Woche"
         }
       ]
+      // OE: answerValueSet insead of string
     }
   ]
 }

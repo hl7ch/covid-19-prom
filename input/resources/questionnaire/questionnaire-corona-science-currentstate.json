@@ -5,12 +5,12 @@
   "id": "questionnaire-corona-science-currentstate",
   "url": "http://fhir.ch/ig/covid-19-prom/Questionnaire/questionnaire-corona-science-currentstate",
   "version": "0.1.0",
-//  ,
-//  "meta": {
-//    "profile": [
-//      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire"
-//    ]
-//  },
+  //  ,
+  //  "meta": {
+  //    "profile": [
+  //      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire"
+  //    ]
+  //  },
   "title": "CoronaScience Fragebogen: Aktuelle Befindlichkeit (Deutsch)",
   // Mehrsprachigkeit ist nicht unterstützt, oder? -> Questionnaires für jede Sprache abbilden
   "name": "CoronaScienceCurrentState_de",
@@ -31,6 +31,23 @@
     {
       "linkId": "Q1",
       "text": "Hast du den Verdacht, am Coronavirus zu leiden?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr_CH"
+              },
+              {
+                "url": "content",
+                "valueString": "Vous pensez souffrir d'un coronavirus?" // TODO, just self translaged
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
       "type": "boolean",
       "repeats": false
     },
@@ -52,8 +69,8 @@
           "answerBoolean": true
         }
       ],
-      "answerOption": [ 
-// diese Antwortoptionen könnte man vermutlich auch per SNOMED codieren (und entsprechend zusätzlich als Resource speichern?)
+      "answerOption": [
+        // diese Antwortoptionen könnte man vermutlich auch per SNOMED codieren (und entsprechend zusätzlich als Resource speichern?)
         {
           "valueString": "positiv"
         },
@@ -106,8 +123,8 @@
       "repeats": true,
       "answerOption": [
         {
-          "valueString": "nichts" 
-// (wie) können wir codieren dass diese Option nicht mit den anderen kompatibel ist?
+          "valueString": "nichts"
+          // (wie) können wir codieren dass diese Option nicht mit den anderen kompatibel ist?
         },
         {
           "valueString": "Familie"

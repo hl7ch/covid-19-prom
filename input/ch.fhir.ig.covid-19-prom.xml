@@ -138,6 +138,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Questionnaire/questionnaire-corona-science-hotquestion-0408"/>
+      </reference>
+      <name value="Corona Science: Brennende Frage vom 08. April"/>
+      <description value="Corona Science: Brennende Frage vom 08. April"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="QuestionnaireResponse/questionnaireresponse-corona-science-currentstate"/>
       </reference>
       <name value="QuestionnairerResponse Corona Science Current State"/>

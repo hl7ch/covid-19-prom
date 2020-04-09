@@ -1,0 +1,278 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "questionnaire-corona-science-hotquestion-0408",
+  "url": "http://fhir.ch/ig/covid-19-prom/Questionnaire/questionnaire-corona-science-hotquestion-0408",
+  "version": "0.1",
+  "meta": {
+    "security": [
+      {
+        "system": "http://midata.coop/codesystems/security",
+        "code": "public"
+      }
+    ]
+  },
+  "name": "CoronaScience_HotQuestion_0408",
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "89196-0",
+      "display": "Patient reported outcome measure panel"
+    }
+  ],
+  "status": "active",
+  "effectivePeriod": {
+    "start": "2020-04-08",
+    "end": "2020-04-13"
+  },
+  "subjectType": [
+    "Patient"
+  ],
+  "publisher": "CoronaScience.ch",
+  "title": "Corona Science: Brennende Frage vom 08. April",
+  "_title": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "fr"
+          },
+          {
+            "url": "content",
+            "valueString": "Corona Science: Question brûlante du 8 avril"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Corona Science: Burning question of April 8th"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "it"
+          },
+          {
+            "url": "content",
+            "valueString": "Corona Science: Domanda calda dell'8 aprile"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "rm"
+          },
+          {
+            "url": "content",
+            "valueString": "Corona Science: Brennende Frage vom 08. April"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+      }
+    ]
+  },
+  "item": [
+    {
+      "linkId": "B01.1",
+      "text": "Die von den Pandemie-Massnahmen von Bund und meinem Kanton verursachten Einschränkungen sind:",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "The limitations caused by the pandemic measures taken by the federal government and my canton are"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          },
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr"
+              },
+              {
+                "url": "content",
+                "valueString": "Les limitations causées par les mesures de lutte contre la pandémie prises par le gouvernement fédéral et mon canton sont"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          },
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "it"
+              },
+              {
+                "url": "content",
+                "valueString": "I limiti causati dalle misure pandemiche adottate dalla Confederazione e dal mio Cantone sono:"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          },
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "rm"
+              },
+              {
+                "url": "content",
+                "valueString": "Die von den Pandemie-Massnahmen von Bund und meinem Kanton verursachten Einschränkungen sind:"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "type": "choice",
+      "repeats": false,
+      "answerValueSet": "#B01.1_valueset"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "url": "B01.1_valueset",
+      "status": "active",
+      "compose": {
+        "include": [
+          {
+            "concept": [
+              {
+                "code": "muchTooMany",
+                "display": "viel zu gross",
+                "designation": [
+                  {
+                    "value": "beaucoup trop grandes",
+                    "language": "fr"
+                  },
+                  {
+                    "value": "far too big",
+                    "language": "en"
+                  },
+                  {
+                    "value": "troppo grande",
+                    "language": "it"
+                  },
+                  {
+                    "value": "viel zu gross",
+                    "language": "rm"
+                  }
+                ]
+              },
+              {
+                "code": "ratherTooMany",
+                "display": "eher zu gross",
+                "designation": [
+                  {
+                    "value": "plutôt trop grandes",
+                    "language": "fr"
+                  },
+                  {
+                    "value": "rather too big",
+                    "language": "en"
+                  },
+                  {
+                    "value": "piuttosto troppo grande",
+                    "language": "it"
+                  },
+                  {
+                    "value": "eher zu gross",
+                    "language": "rm"
+                  }
+                ]
+              },
+              {
+                "code": "adequate",
+                "display": "der Situation angepasst",
+                "designation": [
+                  {
+                    "value": "en accord avec la situation",
+                    "language": "fr"
+                  },
+                  {
+                    "value": "adapted to the situation",
+                    "language": "en"
+                  },
+                  {
+                    "value": "in linea con la situazione",
+                    "language": "it"
+                  },
+                  {
+                    "value": "der Situation angepasst",
+                    "language": "rm"
+                  }
+                ]
+              },
+              {
+                "code": "ratherTooFew",
+                "display": "eher zu wenig",
+                "designation": [
+                  {
+                    "value": "plutôt trop faibles",
+                    "language": "fr"
+                  },
+                  {
+                    "value": "rather too little",
+                    "language": "en"
+                  },
+                  {
+                    "value": "un po' troppo poco",
+                    "language": "it"
+                  },
+                  {
+                    "value": "eher zu wenig",
+                    "language": "rm"
+                  }
+                ]
+              },
+              {
+                "code": "muchToFew",
+                "display": "viel zu wenig",
+                "designation": [
+                  {
+                    "value": "beaucoup trop faibles",
+                    "language": "fr"
+                  },
+                  {
+                    "value": "far too little",
+                    "language": "en"
+                  },
+                  {
+                    "value": "troppo poco",
+                    "language": "it"
+                  },
+                  {
+                    "value": "viel zu wenig",
+                    "language": "rm"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

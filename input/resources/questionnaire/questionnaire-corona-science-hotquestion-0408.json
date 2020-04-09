@@ -154,6 +154,7 @@
     {
       "resourceType": "ValueSet",
       "id": "B011valueset",
+      "url": "http://fhir.ch/ig/covid-19-prom/Questionnaire/questionnaire-corona-science-hotquestion-0408#B011valueset",
       "status": "active",
       "compose": {
         "include": [

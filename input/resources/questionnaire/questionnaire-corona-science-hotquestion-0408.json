@@ -147,17 +147,18 @@
       },
       "type": "choice",
       "repeats": false,
-      "answerValueSet": "#B01.1_valueset"
+      "answerValueSet": "#B011valueset"
     }
   ],
   "contained": [
     {
       "resourceType": "ValueSet",
-      "url": "B01.1_valueset",
+      "id": "B011valueset",
       "status": "active",
       "compose": {
         "include": [
           {
+            "system": "http://fhir.ch/ig/covid-19-prom/Questionnaire/questionnaire-corona-science-hotquestion-0408",
             "concept": [
               {
                 "code": "muchTooMany",

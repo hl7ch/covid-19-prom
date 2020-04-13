@@ -1,0 +1,7 @@
+@host = http://test.fhir.ch/r4
+
+###
+POST {{host}}/Questionnaire HTTP/1.1
+Content-Type: application/fhir+json
+
+< ./input/resources/questionnaire/questionnaire-corona-science-hotquestion-0408.json

@@ -147,7 +147,14 @@
       },
       "type": "choice",
       "repeats": false,
-      "answerValueSet": "#B011valueset"
+      "answerValueSet": "#B011valueset",
+      "initial": [
+        {
+          "valueReference":  {
+            "reference": "#B011valueset"
+          }
+        }
+      ]
     }
   ],
   "contained": [

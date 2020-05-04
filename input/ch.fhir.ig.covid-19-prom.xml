@@ -41,7 +41,7 @@
       </reference>
       <name value="Survey Broennimann"/>
       <description value="Survey of symptoms/outcomes for Broennimann"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-composition"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-composition"/>
     </resource>
     <resource>
       <reference>
@@ -49,7 +49,7 @@
       </reference>
       <name value="ElisabethBroennimannByBFH"/>
       <description value="Example for Patient"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-patient"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-patient"/>
     </resource>
     <resource>
       <reference>
@@ -57,7 +57,7 @@
       </reference>
       <name value="Coughing Observation"/>
       <description value="Coughing Observation - Severe"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"/>
     </resource>
     <resource>
       <reference>
@@ -65,7 +65,7 @@
       </reference>
       <name value="Diarrhea Observation"/>
       <description value="Diarrhea Observation - Mild"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"/>
     </resource>
     <resource>
       <reference>
@@ -73,7 +73,7 @@
       </reference>
       <name value="Fatigue Observation"/>
       <description value="Fatigue Observation - None"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"/>
     </resource>
     <resource>
       <reference>
@@ -81,7 +81,7 @@
       </reference>
       <name value="Headache Observation"/>
       <description value="Headache Observation - None"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"/>
     </resource>
     <resource>
       <reference>
@@ -89,7 +89,7 @@
       </reference>
       <name value="Loss of smell Observation"/>
       <description value="Loss of smell Observation - Mild"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"/>
     </resource>
     <resource>
       <reference>
@@ -97,7 +97,7 @@
       </reference>
       <name value="Nausea Observation"/>
       <description value="Nausea Observation - Mild"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"/>
     </resource>
     <resource>
       <reference>
@@ -105,7 +105,7 @@
       </reference>
       <name value="Pain in throat Observation"/>
       <description value="Pain in throat - Mild"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"/>
     </resource>
     <resource>
       <reference>
@@ -113,7 +113,7 @@
       </reference>
       <name value="Shortness of breath Observation"/>
       <description value="Shortness of breath  - Moderate"/>
-      <exampleCanonical value="StructureDefinition/covid-19-prom-observation"/>
+      <exampleCanonical value="http://fhir.ch/ig/covid-19-prom/StructureDefinition/covid-19-prom-observation"/>
     </resource>
     <resource>
       <reference>
@@ -131,17 +131,24 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Questionnaire/questionnaire-corona-science-currentstate"/>
+        <reference value="Questionnaire/coronascience-question-of-the-day-QD1"/>
       </reference>
-      <name value="Questionnaire Corona Science Current State"/>
-      <description value="CoronaScience Fragebogen: Aktuelle Befindlichkeit (Deutsch)"/>
+      <name value="Corona Science - Question of the day" />
+      <description value="Corona Science - Question of the day" />
     </resource>
     <resource>
       <reference>
-        <reference value="Questionnaire/questionnaire-corona-science-question-of-the-day-QD1"/>
+        <reference value="Questionnaire/coronascience-recurring-questions-QR1"/>
       </reference>
-      <name value="Corona Science: Brennende Frage vom 08. April"/>
-      <description value="Corona Science: Brennende Frage vom 08. April"/>
+      <name value="Corona Science - Recurring questions" />
+      <description value="Corona Science - Recurring questions"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/coronascience-situation-questions-QS1"/>
+      </reference>
+      <name value="Corona Science - Situation" />
+      <description value="Corona Science - Situation"/>
     </resource>
     <resource>
       <reference>
@@ -162,7 +169,7 @@
         <reference value="StructureDefinition/covid-19-prom-patient"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>    
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/covid-19-prom-observation"/>
@@ -186,7 +193,7 @@
         <reference value="ValueSet/yes-no-unknown-undetermined"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>    
+    </resource>
     <!-- pages, parameters -->
     <page>
       <nameUrl value="toc.html"/>

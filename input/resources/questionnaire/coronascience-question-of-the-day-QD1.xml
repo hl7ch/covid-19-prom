@@ -1,5 +1,6 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
-    <id value="questionnaire-corona-science-question-of-the-day-QD1"></id>
+    <id value="coronascience-question-of-the-day-QD1"></id>
+    <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-question-of-the-day-QD1" />
     <meta>
         <extension url="http://midata.coop/extensions/metadata">
             <extension url="app">
@@ -9,14 +10,9 @@
                     <display value="Corona Participant/Panels Counter"></display>
                 </valueCoding>
             </extension>
-            <extension url="creator">
-                <valueReference>
-                    <reference value="Patient/5e81c1e3cf569330205fb40f"></reference>
-                </valueReference>
-            </extension>
         </extension>
         <versionId value="0"></versionId>
-        <lastUpdated value="2020-04-14T18:25:33.000+02:00"></lastUpdated>
+        <lastUpdated value="2020-04-27T19:49:37.000+02:00"></lastUpdated>
         <security>
             <system value="http://midata.coop/codesystems/security"></system>
             <code value="public"></code>
@@ -25,14 +21,15 @@
     <contained>
         <ValueSet xmlns="http://hl7.org/fhir">
             <id value="QD1.ID1.valueset"></id>
-            <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/questionnaire-corona-science-question-of-the-day-QD1#QD1.ID1.valueset"></url>
+            <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-question-of-the-day-QD1#QD1.ID1.valueset"></url>
+            <title value="Limitations assessment"></title>
             <status value="active"></status>
             <compose>
                 <include>
-                    <system value="http://fhir.ch/ig/covid-19-prom/Questionnaire/questionnaire-corona-science-question-of-the-day-QD1"></system>
+                    <system value="http://fhir.ch/ig/covid-19-prom/codesystem/coronascience-limitations-assessment"></system>
                     <concept>
-                        <code value="muchTooMany"></code>
-                        <display value="viel zu gross"></display>
+                        <code value="farTooBig"></code>
+                        <display value="far too big"></display>
                         <designation>
                             <language value="de"></language>
                             <value value="viel zu gross"></value>
@@ -46,17 +43,21 @@
                             <value value="beaucoup trop grandes"></value>
                         </designation>
                         <designation>
+                            <language value="gsw"></language>
+                            <value value="viu z’gross"></value>
+                        </designation>
+                        <designation>
                             <language value="it"></language>
                             <value value="troppo grande"></value>
                         </designation>
                         <designation>
                             <language value="rm"></language>
-                            <value value="viel zu gross"></value>
+                            <value value="exageradas"></value>
                         </designation>
                     </concept>
                     <concept>
-                        <code value="ratherTooMany"></code>
-                        <display value="eher zu gross"></display>
+                        <code value="ratherTooBig"></code>
+                        <display value="rather too big"></display>
                         <designation>
                             <language value="de"></language>
                             <value value="eher zu gross"></value>
@@ -70,17 +71,21 @@
                             <value value="plutôt trop grandes"></value>
                         </designation>
                         <designation>
+                            <language value="gsw"></language>
+                            <value value="eher z’gross"></value>
+                        </designation>
+                        <designation>
                             <language value="it"></language>
                             <value value="piuttosto troppo grande"></value>
                         </designation>
                         <designation>
                             <language value="rm"></language>
-                            <value value="eher zu gross"></value>
+                            <value value="plitost vastas"></value>
                         </designation>
                     </concept>
                     <concept>
                         <code value="adequate"></code>
-                        <display value="der Situation angepasst"></display>
+                        <display value="adapted to the situation"></display>
                         <designation>
                             <language value="de"></language>
                             <value value="der Situation angepasst"></value>
@@ -94,17 +99,21 @@
                             <value value="en accord avec la situation"></value>
                         </designation>
                         <designation>
+                            <language value="gsw"></language>
+                            <value value="der Situation apasst"></value>
+                        </designation>
+                        <designation>
                             <language value="it"></language>
                             <value value="in linea con la situazione"></value>
                         </designation>
                         <designation>
                             <language value="rm"></language>
-                            <value value="der Situation angepasst"></value>
+                            <value value="adattadas a la situaziun"></value>
                         </designation>
                     </concept>
                     <concept>
-                        <code value="ratherTooFew"></code>
-                        <display value="eher zu wenig"></display>
+                        <code value="ratherTooLittle"></code>
+                        <display value="rather too little"></display>
                         <designation>
                             <language value="de"></language>
                             <value value="eher zu wenig"></value>
@@ -118,17 +127,21 @@
                             <value value="plutôt trop faibles"></value>
                         </designation>
                         <designation>
+                            <language value="gsw"></language>
+                            <value value="eher z’wenig"></value>
+                        </designation>
+                        <designation>
                             <language value="it"></language>
                             <value value="un po' troppo poco"></value>
                         </designation>
                         <designation>
                             <language value="rm"></language>
-                            <value value="eher zu wenig"></value>
+                            <value value="plitost pauc"></value>
                         </designation>
                     </concept>
                     <concept>
-                        <code value="muchToFew"></code>
-                        <display value="viel zu wenig"></display>
+                        <code value="farTooLittle"></code>
+                        <display value="far too little"></display>
                         <designation>
                             <language value="de"></language>
                             <value value="viel zu wenig"></value>
@@ -142,12 +155,16 @@
                             <value value="beaucoup trop faibles"></value>
                         </designation>
                         <designation>
+                            <language value="gsw"></language>
+                            <value value="viu z’wenig"></value>
+                        </designation>
+                        <designation>
                             <language value="it"></language>
                             <value value="troppo poco"></value>
                         </designation>
                         <designation>
                             <language value="rm"></language>
-                            <value value="viel zu wenig"></value>
+                            <value value="bler massa pauc"></value>
                         </designation>
                     </concept>
                 </include>
@@ -159,10 +176,10 @@
             <reference value="#QD1.ID1.valueset"></reference>
         </valueReference>
     </extension>
-    <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/questionnaire-corona-science-question-of-the-day-QD1"></url>
+    <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-question-of-the-day-QD1"></url>
     <version value="1.0"></version>
-    <name value="Corona_Science_Question_of_the_day_QD1"></name>
-    <title value="Corona Science - Frage des Tages">
+    <name value="coronascience-question-of-the-day-QD1"></name>
+    <title value="Corona Science - Question of the day">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
             <extension url="lang">
                 <valueCode value="de"></valueCode>
@@ -189,6 +206,14 @@
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
             <extension url="lang">
+                <valueCode value="gsw"></valueCode>
+            </extension>
+            <extension url="content">
+                <valueString value="Corona Science - Frag vom Tag"></valueString>
+            </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
                 <valueCode value="it"></valueCode>
             </extension>
             <extension url="content">
@@ -200,25 +225,37 @@
                 <valueCode value="rm"></valueCode>
             </extension>
             <extension url="content">
-                <valueString value="Corona Science - Frage des Tages"></valueString>
+                <valueString value="Corona Science - Dumonda dal di"></valueString>
             </extension>
         </extension>
     </title>
     <status value="active"></status>
-    <publisher value="coronascience.ch"></publisher>
+    <subjectType value="Patient"></subjectType>
+    <publisher value="Corona Science"></publisher>
+    <useContext>
+        <code>
+            <system value="http://midata.coop/codesystems/usecontext-type"></system>
+            <code value="prom"></code>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://midata.coop/codesystems/coronascience-questionnaire-type"></system>
+                <code value="question-of-the-day"></code>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
     <effectivePeriod>
         <start value="2020-04-01"></start>
-        <end value="2020-04-17"></end>
+        <end value="2020-04-30"></end>
     </effectivePeriod>
     <code>
         <system value="http://loinc.org"></system>
         <code value="89196-0"></code>
         <display value="Patient reported outcome measure panel"></display>
     </code>
-    <subjectType value="Patient"></subjectType>
     <item>
         <linkId value="QD1.ID1"></linkId>
-        <text value="Wie beurteilst du die Einschränkungen der geltenden Pandemie-Massnahmen sowie Vorschriften von Bund und deinem Wohnkanton?">
+        <text value="How do you evaluate the limitations of the current pandemic measures and regulations of the federal government and your canton of residence?">
             <extension url="http://hl7.org/fhir/StructureDefinition/translation">
                 <extension url="lang">
                     <valueCode value="de"></valueCode>
@@ -232,7 +269,7 @@
                     <valueCode value="en"></valueCode>
                 </extension>
                 <extension url="content">
-                    <valueString value="How do you assess the limitations of the current pandemic measures and regulations of the federal government and your canton of residence?"></valueString>
+                    <valueString value="How do you evaluate the limitations of the current pandemic measures and regulations of the federal government and your canton of residence?"></valueString>
                 </extension>
             </extension>
             <extension url="http://hl7.org/fhir/StructureDefinition/translation">
@@ -241,6 +278,14 @@
                 </extension>
                 <extension url="content">
                     <valueString value="Comment évalues-tu les restrictions des mesures et réglementations actuelles de la Confédération et de ton canton de résidence en matière de pandémie?"></valueString>
+                </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                    <valueCode value="gsw"></valueCode>
+                </extension>
+                <extension url="content">
+                    <valueString value="Wie beurteilsch du d’Ischränkige vo de gäutende Pandemie-Massnahme u Vorschrifte vom Bund u dim Wohnkanton?"></valueString>
                 </extension>
             </extension>
             <extension url="http://hl7.org/fhir/StructureDefinition/translation">
@@ -256,11 +301,12 @@
                     <valueCode value="rm"></valueCode>
                 </extension>
                 <extension url="content">
-                    <valueString value="Wie beurteilst du die Einschränkungen der geltenden Pandemie-Massnahmen sowie Vorschriften von Bund und deinem Wohnkanton?"></valueString>
+                    <valueString value="Sco giuditgeschas ti las restricziuns causadas da las masiras actualas cunter la pandemia sco era las directivas relaschadas da la Confederaziun e da tes chantun da domicil?"></valueString>
                 </extension>
             </extension>
         </text>
         <type value="choice"></type>
         <repeats value="false"></repeats>
+        <answerValueSet value="#QD1.ID1.valueset"></answerValueSet>
     </item>
 </Questionnaire>

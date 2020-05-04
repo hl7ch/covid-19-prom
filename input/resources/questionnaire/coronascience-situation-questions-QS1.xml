@@ -1,0 +1,1471 @@
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="coronascience-situation-questions-QS1"></id>
+  <meta>
+    <extension url="http://midata.coop/extensions/metadata">
+      <extension url="app">
+        <valueCoding>
+          <system value="http://midata.coop/codesystems/app"></system>
+          <code value="corona_aggregator"></code>
+          <display value="Corona Participant/Panels Counter"></display>
+        </valueCoding>
+      </extension>
+    </extension>
+    <versionId value="0"></versionId>
+    <lastUpdated value="2020-04-29T12:10:30.000+02:00"></lastUpdated>
+    <security>
+      <system value="http://midata.coop/codesystems/security"></system>
+      <code value="public"></code>
+    </security>
+  </meta>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QS1.yes-no.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-situation-questions-QS1#QS1.yes-no.valueset"></url>
+      <title value="Yes/No"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://snomed.info/sct"></system>
+          <concept>
+            <code value="373066001"></code>
+            <display value="Yes"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Ja"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Yes"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Oui"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Ja"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Si"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Gea"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="373067005"></code>
+            <display value="No"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Nein"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="No"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Non"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Nei"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="No"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Na"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QS1.IR1.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-situation-questions-QS1#QS1.IR1.valueset"></url>
+      <title value="Risk factors"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://snomed.info/sct"></system>
+          <concept>
+            <code value="46635009"></code>
+            <display value="Diabetes mellitus type 1 (disorder)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Diabetes Typ 1"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Diabetes type 1"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Diabète type 1"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Diabetes Typ 1"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Diabete tipo 1"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Diabetes tip 1"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="44054006"></code>
+            <display value="Diabetes mellitus type 2 (disorder)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Diabetes Typ 2"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Diabetes type 2"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Diabète type 2"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Diabetes Typ 2"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Diabete tipo 2"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Diabetes tip 2"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="49601007"></code>
+            <display value="Disorder of cardiovascular system (disorder)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Herz-Kreislauf-Erkrankung"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Cardiovascular disease"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Maladie cardiovasculaire"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Herz-Kreislauf-Erkrankung"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Malattie cardiovascolari"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Herz-Kreislauf-Erkrankung"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="17097001"></code>
+            <display value="Chronic disease of respiratory system (disorder)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Chronische Atemwegserkrankung"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Chronic respiratory disease"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Maladie respiratoire chronique"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Chronische Atemwegserkrankung"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Malattie respiratorie croniche"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Chronische Atemwegserkrankung"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="363346000"></code>
+            <display value="Malignant neoplastic disease (disorder)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Krebs"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Cancer"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Cancer"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Krebs"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Cancro"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Cancer"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="68605000"></code>
+            <display value="Immunosuppression-related infectious disease (disorder)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Immunsuppression"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Immunosuppression"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Immunosuppression"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Immunsuppression"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Immunodepressione"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Immunsuppression"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="27624003"></code>
+            <display value="Chronic disease (disorder)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Andere chronische Krankheit"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Other chronic disease"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Autre maladie chronique"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Anderi chronischi Krankheit"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Altre malattie croniche"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Andere chronische Krankheit"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="38341003"></code>
+            <display value="Hypertensive disorder, systemic arterial (disorder)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Bluthochdruck"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="High blood pressure"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Hypertension artérielle"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Bluthochdruck"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Ipertensione"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Ipertensiun"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QS1.IR2.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-situation-questions-QS1#QS1.IR2.valueset"></url>
+      <title value="Smoker"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://snomed.info/sct"></system>
+          <concept>
+            <code value="8392000"></code>
+            <display value="Non-smoker (finding)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Nichtraucher"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Non-smoker"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Non fumeur"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Nichtraucher"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Non fumatore"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Nichtraucher"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="8517006"></code>
+            <display value="Ex-smoker (finding)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Ex-Raucher"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Ex-smoker"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Ex-fumeur"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Ex-Raucher"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Ex-fumatore"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Ex-Raucher"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="428041000124106"></code>
+            <display value="Occasional tobacco smoker (finding)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Gelegenheitsraucher/in"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Occasional smoker"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Fumeur occasionnel/fumeuse occasionnelle"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Gelegenheitsraucher/in"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Fumatore occasionale"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Gelegenheitsraucher/in"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="77176002"></code>
+            <display value="Smoker (finding)"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Raucher"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Smoker"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Rumeur"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Raucher"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Fumatore"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Raucher"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QS1.IL1.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-situation-questions-QS1#QS1.IL1.valueset"></url>
+      <title value="Workplace"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://fhir.ch/ig/covid-19-prom/codesystem/coronascience-workplace"></system>
+          <concept>
+            <code value="usualWorkplace"></code>
+            <display value="Usual workplace"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Üblicher Arbeitsplatz"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Usual workplace"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Lieu de travail usuel"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Üblicher Arbeitsplatz"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Luogo di lavoro abituale"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Üblicher Arbeitsplatz"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="homeOffice"></code>
+            <display value="Home office"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Home office/Distance learning"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Home office/Distance learning"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Home office/Distance learning"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Home office/Distance learning"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Smart working/Formazione a distanza"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Home office/Distance learning"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="other"></code>
+            <display value="Other"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Sonstiges"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Other"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Autre"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Sonstiges"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Altro"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Auter"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QS1.IL4.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-situation-questions-QS1#QS1.IL4.valueset"></url>
+      <title value="Employment status"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://fhir.ch/ig/covid-19-prom/codesystem/coronascience-employment-status"></system>
+          <concept>
+            <code value="fullTime"></code>
+            <display value="Full-time"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Voll beschäftigt"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Full-time"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="À plein temps"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Vou beschäftiget"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="A tempo pieno"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Cumplainamain"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="shortTime"></code>
+            <display value="On short time"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="In Kurzarbeit"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="On short time"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Au chômage partiel"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Ir Churzarbeit"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Part-time"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Lavur curta"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="housework"></code>
+            <display value="Housework"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Im Haushalt tätig"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Housework"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Travaux ménagers"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Im Haushaut tätig"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Casalinga/o"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Occupà en chasada"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="unemployed"></code>
+            <display value="Unemployed"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Arbeitslos"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Unemployed"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Sans emploi"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Arbeitslos"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Disoccupata/o"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Dischoccupà"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="retired"></code>
+            <display value="Retired"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Pensioniert"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Retired"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Retraité-e"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Pensioniert"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Pensionata/o"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Pensiunà"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QS1.yes-no.valueset"></reference>
+    </valueReference>
+  </extension>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QS1.IR1.valueset"></reference>
+    </valueReference>
+  </extension>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QS1.IR2.valueset"></reference>
+    </valueReference>
+  </extension>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QS1.IL1.valueset"></reference>
+    </valueReference>
+  </extension>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QS1.IL4.valueset"></reference>
+    </valueReference>
+  </extension>
+  <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-situation-questions-QS1"></url>
+  <version value="1.0"></version>
+  <name value="coronascience-situation-questions-QS1"></name>
+  <title value="Corona Science - Situation">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="de"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Situation"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Situation"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="fr"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Situation"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="gsw"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Situation"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="it"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Situazione"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="rm"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Situaziun"></valueString>
+      </extension>
+    </extension>
+  </title>
+  <status value="active"></status>
+  <subjectType value="Patient"></subjectType>
+  <publisher value="Corona Science"></publisher>
+  <useContext>
+    <code>
+      <system value="http://midata.coop/codesystems/usecontext-type"></system>
+      <code value="prom"></code>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://midata.coop/codesystems/coronascience-questionnaire-type"></system>
+        <code value="situation-questions"></code>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <effectivePeriod>
+    <start value="2020-04-01"></start>
+  </effectivePeriod>
+  <code>
+    <system value="http://loinc.org"></system>
+    <code value="89196-0"></code>
+    <display value="Patient reported outcome measure panel"></display>
+  </code>
+  <item>
+    <linkId value="QS1.IR0"></linkId>
+    <text value="Risk factors">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="de"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Risikofaktoren"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="en"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Risk factors"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="fr"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Facteurs de risque"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="gsw"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Risikofaktore"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="it"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Fattori di rischio"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="rm"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Facturs da ristga"></valueString>
+        </extension>
+      </extension>
+    </text>
+    <type value="group"></type>
+    <repeats value="false"></repeats>
+    <item>
+      <linkId value="QS1.IR1"></linkId>
+      <text value="Are you affected by any of the following risk factors?">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Bist du von einem der folgenden Risikofaktoren betroffen?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Are you affected by any of the following risk factors?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Es-tu concerné-e par un ou des facteurs de risque suivants?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Bist du von einem der folgenden Risikofaktoren betroffen?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Sei affetto da uno dei seguenti fattori di rischio?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Bist du von einem der folgenden Risikofaktoren betroffen?"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="true"></repeats>
+      <answerValueSet value="#QS1.IR1.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QS1.IR2"></linkId>
+      <text value="Smoking behavior">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Rauchverhalten"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Smoking behavior"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Comportement tabagique"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Rauchverhalten"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Abitudine al fumo"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Rauchverhalten"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QS1.IR2.valueset"></answerValueSet>
+    </item>
+  </item>
+  <item>
+    <linkId value="QS1.IL0"></linkId>
+    <text value="Life situation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="de"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Lebenssituation"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="en"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Life situation"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="fr"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Situation de vie"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="gsw"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Läbessituation"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="it"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Situazione di vita"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="rm"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Lebenssituation"></valueString>
+        </extension>
+      </extension>
+    </text>
+    <type value="group"></type>
+    <repeats value="false"></repeats>
+    <item>
+      <linkId value="QS1.IL1"></linkId>
+      <text value="Current workplace">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Aktueller Arbeitsort"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Current workplace"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Lieu de travail actuel"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Aktueller Arbeitsort"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Luogo di lavoro attuale"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Aktueller Arbeitsort"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QS1.IL1.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QS1.IL2"></linkId>
+      <text value="I take care of children, young people">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ich übernehme Betreuungsaufgaben von Kindern, Jugendlichen"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="I take care of children, young people"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Je prends en charge des tâches de soins aux enfants, jeunes"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ig übernime Betreuigsufgabe vo Ching und Jugendliche"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Mi prendo cura ed assisto bambini"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ich übernehme Betreuungsaufgaben von Kindern, Jugendlichen"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QS1.yes-no.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QS1.IL3"></linkId>
+      <text value="I take care of neighbors, parents, grandparents, etc.">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ich übernehme Betreuungsarbeiten von Nachbarn, Eltern, Grosseltern, etc."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="I take care of neighbors, parents, grandparents, etc."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="J'assure le soutien de voisins, parents, grands-parents, etc."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ig übernime Betreuigsufgabe vo Nachbare, Eutere, Grosseutere und so witer"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Mi prendo cura o assisto vicini, genitori, nonni, ecc."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ich übernehme Betreuungsarbeiten von Nachbarn, Eltern, Grosseltern, etc."></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QS1.yes-no.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QS1.IL4"></linkId>
+      <text value="Current employment status">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Aktueller Beschäftigungsstatus"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Current employment status"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Situation d'emploi actuelle"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Aktueller Beschäftigungsstatus"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Situazione lavorativa attuale"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Aktueller Beschäftigungsstatus"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QS1.IL4.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QS1.IL5"></linkId>
+      <text value="Do you work in an medical setting with patient contact?">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Arbeitest du im medizinischen Umfeld mit Patientenkontakt?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Do you work in an medical setting with patient contact?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Travailles-tu dans un environnement médical en contact avec des patients?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Arbeitisch du im medizinische Umfäud mit Patientekontakt?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Lavori in un ambiente medico ed hai contatti con pazienti?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Arbeitest du im medizinischen Umfeld mit Patientenkontakt?"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QS1.yes-no.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QS1.IL6"></linkId>
+      <text value="How many people do you live with in your household?">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Mit wie vielen Personen lebst du im Haushalt?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="How many people do you live with in your household?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Avec combien de personnes vis-tu?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Wie viu Lüt läbe mit dir zäme?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Con quante persone vivi in casa?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Mit wie vielen Personen lebst du im Haushalt?"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="integer"></type>
+      <repeats value="false"></repeats>
+    </item>
+    <item>
+      <linkId value="QS1.IL7"></linkId>
+      <text value="Has anyone close to you been tested positive for the coronavirus?">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ist jemand aus deinem nahen Umfeld positiv auf das Coronavirus getestet worden?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Has anyone close to you been tested positive for the coronavirus?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Un de tes proches a-t-il été testé positif au coronavirus?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ist jemand aus deinem nahen Umfeld positiv auf das Coronavirus getestet worden?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Qualcuno vicino a te è risultato positivo al coronavirus?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ist jemand aus deinem nahen Umfeld positiv auf das Coronavirus getestet?"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QS1.yes-no.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QS1.IL8"></linkId>
+      <text value="Postal code of current place of residence">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Postleitzahl des aktuellen Wohnortes"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Postal code of current place of residence"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Code postal du lieu de résidence actuel"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Postleitzahl des aktuellen Wohnortes"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Codice postale del luogo di residenza attuale"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Postleitzahl des aktuellen Wohnortes"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="integer"></type>
+      <repeats value="false"></repeats>
+    </item>
+  </item>
+</Questionnaire>

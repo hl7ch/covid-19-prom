@@ -1,0 +1,71 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"extension": [
+		{
+			"url": "http://midata.coop/extensions/response-code",
+			"valueCoding": {
+				"system": "http://loinc.org",
+				"code": "89196-0",
+				"display": "Patient reported outcome measure panel"
+			}
+		}
+	],
+	"status": "completed",
+	"authored": "2020-04-03T11:13:23.163Z",
+	"item": [
+		{
+			"linkId": "P1",
+			"text": "Ich arbeite...",
+			"answer": [
+				{
+					"valueString": "Home Office/Studium"
+				}
+			]
+		},
+		{
+			"linkId": "P2",
+			"text": "Ich übernehme Betreuungsarbeiten von Kindern/Jugendlichen.",
+			"answer": [
+				{
+					"valueBoolean": true
+				}
+			]
+		},
+		{
+			"linkId": "P3",
+			"text": "Ich übernehme Betreuungsarbeiten von Nachbarn/Eltern/Grosseltern etc.",
+			"answer": [
+				{
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"linkId": "P4",
+			"text": "Ich bin...",
+			"answer": [
+				{
+					"valueString": "in Kurzarbeit"
+				}
+			]
+		},
+		{
+			"linkId": "P5",
+			"text": "Arbeitest du im medizinischen Umfeld mit Patientenkontakt?",
+			"answer": [
+				{
+					"valueBoolean": true
+				}
+			]
+		},
+		{
+			"linkId": "P6",
+			"text": "Mit wie vielen Personen lebst du im Haushalt?",
+			"answer": [
+				{
+					"valueInteger": "3"
+				}
+			]
+		}
+	]
+}

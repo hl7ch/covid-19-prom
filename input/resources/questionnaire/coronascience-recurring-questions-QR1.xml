@@ -1,0 +1,1391 @@
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="coronascience-recurring-questions-QR1"></id>
+  <meta>
+    <extension url="http://midata.coop/extensions/metadata">
+      <extension url="app">
+        <valueCoding>
+          <system value="http://midata.coop/codesystems/app"></system>
+          <code value="corona_aggregator"></code>
+          <display value="Corona Participant/Panels Counter"></display>
+        </valueCoding>
+      </extension>
+    </extension>
+    <versionId value="0"></versionId>
+    <lastUpdated value="2020-04-29T12:57:14.000+02:00"></lastUpdated>
+    <security>
+      <system value="http://midata.coop/codesystems/security"></system>
+      <code value="public"></code>
+    </security>
+  </meta>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QR1.yes-no.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-recurring-questions-QR1#QR1.yes-no.valueset"></url>
+      <title value="Yes/No"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://snomed.info/sct"></system>
+          <concept>
+            <code value="373066001"></code>
+            <display value="Yes"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Ja"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="Yes"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Oui"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Ja"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="Si"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Gea"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="373067005"></code>
+            <display value="No"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="Nein"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="No"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="Non"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="Nei"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="No"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="Na"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QR1.IS3.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-recurring-questions-QR1#QR1.IS3.valueset"></url>
+      <title value="Coronavirus test result"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://fhir.ch/ig/covid-19-prom/codesystem/coronascience-coronavirus-test-result"></system>
+          <concept>
+            <code value="testPositive"></code>
+            <display value="positive"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="positiv"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="positive"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="positif"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="positiv"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="positivo"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="positiv"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="testNegative"></code>
+            <display value="negative"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="negativ"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="negative"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="négatif"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="negativ"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="negativo"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="negativ"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="testPending"></code>
+            <display value="pending"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="ausstehend"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="pending"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="en attente"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="warte no druf"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="in attesa"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="pendent"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QR1.IE1.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-recurring-questions-QR1#QR1.IE1.valueset"></url>
+      <title value="Mood"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://fhir.ch/ig/covid-19-prom/codesystem/coronascience-mood"></system>
+          <concept>
+            <code value="good"></code>
+            <display value="good"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="gut"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="good"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="bien"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="guet"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="bene"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="bain"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="ratherGood"></code>
+            <display value="rather good"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="eher gut"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="rather good"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="plutôt bien"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="eher guet"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="abbastanza bene"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="plitost bain"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="ratherBad"></code>
+            <display value="rather bad"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="eher schlecht"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="rather bad"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="pas bien"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="eher schlächt"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="piuttosto male"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="plitost mal"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="bad"></code>
+            <display value="bad"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="schlecht"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="bad"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="mal"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="schlächt"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="molto male"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="mal"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QR1.IE2.valueset"></id>
+      <extension url="http://midata.coop/extensions/valueset-unselect-others">
+        <extension url="concept">
+          <valueCode value="nothing"></valueCode>
+        </extension>
+      </extension>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-recurring-questions-QR1#QR1.IE2.valueset"></url>
+      <title value="Worries"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://fhir.ch/ig/covid-19-prom/codesystem/coronascience-worries"></system>
+          <concept>
+            <code value="nothing"></code>
+            <display value="nothing"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="nichts"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="nothing"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="rien"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="nüt"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="nulla"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="nagut"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="family"></code>
+            <display value="my family"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="meine Familie"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="my family"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="ma famille"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="mini Familie"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="la mia famiglia"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="mia famiglia"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="health"></code>
+            <display value="my health"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="meine Gesundheit"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="my health"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="ma santé"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="mini Gsundheit"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="la mia salute"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="mia sanadad"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="future"></code>
+            <display value="my future"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="meine Zukunft"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="my future"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="mon avenir"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="mini Zuekunft"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="il mio futuro"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="mes futur"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="finance"></code>
+            <display value="my finance"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="meine Finanzen"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="my finance"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="mes finances"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="mini Finanze"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="le mie finanze"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="mias finanzas"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QR1.IE3.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-recurring-questions-QR1#QR1.IE3.valueset"></url>
+      <title value="Going outside"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://fhir.ch/ig/covid-19-prom/codesystem/coronascience-going-outside"></system>
+          <concept>
+            <code value="severalTimesADay"></code>
+            <display value="several times a day"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="mehrmals pro Tag"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="several times a day"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="plusieurs fois par jour"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="mehrmaus am Tag"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="più volte al giorno"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="pliras giadas per di"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="severalTimesAWeek"></code>
+            <display value="several times a week"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="mehrmals pro Woche"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="several times a week"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="plusieurs fois par semaine"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="mehrmaus ir Wuche"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="più volte alla settimana"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="pliras giadas l’emna"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="onceAWeek"></code>
+            <display value="once a week"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="einmal pro Woche"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="once a week"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="une fois par semaine"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="einisch ir Wuche"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="una volta alla settimana"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="ina giada l'emna"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="never"></code>
+            <display value="never"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="nie"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="never"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="jamais"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="gar nid"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="mai"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="mai"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="QR1.IE4.valueset"></id>
+      <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-recurring-questions-QR1#QR1.IE4.valueset"></url>
+      <title value="Feeling"></title>
+      <status value="active"></status>
+      <compose>
+        <include>
+          <system value="http://fhir.ch/ig/covid-19-prom/codesystem/coronascience-feeling"></system>
+          <concept>
+            <code value="supported"></code>
+            <display value="supported"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="gut aufgehoben"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="supported"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="très soutenu-e"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="guet ufghobe"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="molto supportata/o"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="en buns mauns"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="ratherSupported"></code>
+            <display value="rather supported"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="eher gut aufgehoben"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="rather supported"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="plutôt soutenu-e"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="eher guet ufghobe"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="abbastanza supportata/o"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="plitost en buns mauns"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="ratherLonely"></code>
+            <display value="rather lonely"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="eher einsam"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="rather lonely"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="relativement seul-e"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="eher elei"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="relativamente sola/o"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="plitost sulet"></value>
+            </designation>
+          </concept>
+          <concept>
+            <code value="lonely"></code>
+            <display value="lonely"></display>
+            <designation>
+              <language value="de"></language>
+              <value value="einsam"></value>
+            </designation>
+            <designation>
+              <language value="en"></language>
+              <value value="lonely"></value>
+            </designation>
+            <designation>
+              <language value="fr"></language>
+              <value value="très seul-e"></value>
+            </designation>
+            <designation>
+              <language value="gsw"></language>
+              <value value="elei"></value>
+            </designation>
+            <designation>
+              <language value="it"></language>
+              <value value="molto sola/o"></value>
+            </designation>
+            <designation>
+              <language value="rm"></language>
+              <value value="sulet"></value>
+            </designation>
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QR1.yes-no.valueset"></reference>
+    </valueReference>
+  </extension>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QR1.IS3.valueset"></reference>
+    </valueReference>
+  </extension>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QR1.IE1.valueset"></reference>
+    </valueReference>
+  </extension>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QR1.IE2.valueset"></reference>
+    </valueReference>
+  </extension>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QR1.IE3.valueset"></reference>
+    </valueReference>
+  </extension>
+  <extension url="http://midata.coop/extensions/valueset-reference">
+    <valueReference>
+      <reference value="#QR1.IE4.valueset"></reference>
+    </valueReference>
+  </extension>
+  <url value="http://fhir.ch/ig/covid-19-prom/Questionnaire/coronascience-recurring-questions-QR1"></url>
+  <version value="1.0"></version>
+  <name value="coronascience-recurring-questions-QR1"></name>
+  <title value="Corona Science - Recurring questions">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="de"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Wiederkehrende Fragen"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Recurring questions"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="fr"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Questions récurrentes"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="gsw"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Wederkehrendi Frage"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="it"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Questioni ricorrenti"></valueString>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="rm"></valueCode>
+      </extension>
+      <extension url="content">
+        <valueString value="Corona Science - Dumondas che sa repetan"></valueString>
+      </extension>
+    </extension>
+  </title>
+  <status value="active"></status>
+  <subjectType value="Patient"></subjectType>
+  <publisher value="Corona Science"></publisher>
+  <useContext>
+    <code>
+      <system value="http://midata.coop/codesystems/usecontext-type"></system>
+      <code value="prom"></code>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://midata.coop/codesystems/coronascience-questionnaire-type"></system>
+        <code value="recurring-questions"></code>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <effectivePeriod>
+    <start value="2020-04-01"></start>
+  </effectivePeriod>
+  <code>
+    <system value="http://loinc.org"></system>
+    <code value="89196-0"></code>
+    <display value="Patient reported outcome measure panel"></display>
+  </code>
+  <item>
+    <linkId value="QR1.IS0"></linkId>
+    <text value="Symptoms">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="de"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Symptome"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="en"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Symptoms"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="fr"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Symptômes"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="gsw"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Symptom"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="it"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Sintomi"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="rm"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Sintoms"></valueString>
+        </extension>
+      </extension>
+    </text>
+    <type value="group"></type>
+    <repeats value="false"></repeats>
+    <item>
+      <linkId value="QR1.IS1"></linkId>
+      <text value="Do you suspect having contracted with the coronavirus?">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Hast du den Verdacht, am Coronavirus zu leiden?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Do you suspect having contracted the coronavirus?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Penses-tu souffrir du coronavirus?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Hesch du ds Gfüeu, am Coronavirus z'lide?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Pensi di avere il coronavirus?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Suspectas ti d’avair il coronavirus?"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QR1.yes-no.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QR1.IS2"></linkId>
+      <text value="Have you been tested for the coronavirus?">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Wurdest du auf das Coronavirus getestet?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Have you been tested for the coronavirus?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="As-tu été testé-e pour le coronavirus?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Bisch du uf ds Coronavirus testet worde?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Hai effettuato un test per il coronavirus?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Has ti fatg in coronavirus test?"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QR1.yes-no.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QR1.IS3"></linkId>
+      <text value="What is the test result?">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Wie lautet das Testergebnis?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="What is the test result?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Quel est le résultat du test?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Wie lutet dis Testergäbnis?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Qual è il risultato del test?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Co è il resultat dal test?"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <enableWhen>
+        <question value="QR1.IS2"></question>
+        <operator value="="></operator>
+        <answerCoding>
+          <system value="http://snomed.info/sct"></system>
+          <code value="373066001"></code>
+        </answerCoding>
+      </enableWhen>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QR1.IS3.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QR1.IS4"></linkId>
+      <text value="Have you contacted a doctor's office or an emergency room?">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Hast du eine Arztpraxis oder eine Notfallaufnahme kontaktiert?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Have you contacted a doctor's office or an emergency room?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="As-tu contacté un cabinet médical ou les urgences?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Hesch du en Arztpraxis oder e Notufnahm kontaktiert?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Hai contattato uno studio medico o un pronto soccorso?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Has ti contactà ina pratica da medi u ina recepziun da cas urgents?"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QR1.yes-no.valueset"></answerValueSet>
+    </item>
+  </item>
+  <item>
+    <linkId value="QR1.IE0"></linkId>
+    <text value="Emotional state">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="de"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Befindlichkeiten"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="en"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Emotional state"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="fr"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="État émotionnel"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="gsw"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Befindlichkeite"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="it"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Stato emotivo"></valueString>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="rm"></valueCode>
+        </extension>
+        <extension url="content">
+          <valueString value="Stadi da l'olma"></valueString>
+        </extension>
+      </extension>
+    </text>
+    <type value="group"></type>
+    <repeats value="false"></repeats>
+    <item>
+      <linkId value="QR1.IE1"></linkId>
+      <text value="How are you?">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Wie geht es dir?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="How are you?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Comment vas-tu?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Wie geit's dir so?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Come stai?"></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Co vai?"></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QR1.IE1.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QR1.IE2"></linkId>
+      <text value="I'm worried about...">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ich mache mir Sorgen über..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="I'm worried about..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Je me fais du soucis pour..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="I mache mir Sorge um..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Sono preoccupata/o per..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Jau hai quità per..."></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="true"></repeats>
+      <answerValueSet value="#QR1.IE2.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QR1.IE3"></linkId>
+      <text value="I go outside...">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ich gehe nach draussen..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="I go outside..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Je vais dehors..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="I go voruse..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Esco di casa..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Jau vegn dadora..."></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QR1.IE3.valueset"></answerValueSet>
+    </item>
+    <item>
+      <linkId value="QR1.IE4"></linkId>
+      <text value="I'm feeling....">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Ich fühle mich..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="I'm feeling..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="fr"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Je me sens..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="gsw"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="I füehle mi..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="it"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Mi sento..."></valueString>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="rm"></valueCode>
+          </extension>
+          <extension url="content">
+            <valueString value="Jau sun..."></valueString>
+          </extension>
+        </extension>
+      </text>
+      <type value="choice"></type>
+      <repeats value="false"></repeats>
+      <answerValueSet value="#QR1.IE4.valueset"></answerValueSet>
+    </item>
+  </item>
+</Questionnaire>

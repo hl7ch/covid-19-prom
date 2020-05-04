@@ -32,6 +32,18 @@
                <value value="température (C°)"/>
             </designation>
          </concept>
+      </include>
+      <include>
+      <system value="http://snomed.info/sct">
+        <!-- SNOMED CT GPS (Global Patient Reference Set: https://refset.ihtsdotools.org/#/directory?refsetId=10975166) -->
+        <!-- <system value="http://snomed.info/sct?fhir_vs=refset/787778008"/> 
+             see https://chat.fhir.org/#narrow/stream/179166-implementers/topic/SNOMED.20Global.20Patient.20Set.20version.20URI
+            but igpbulisher warning: covid-19-prom	warning	Error from server: Unable to provide support for code system http://snomed.info/sct?fhir_vs=refset/787778008  -->
+        <!-- <system value="http://snomed.info/valueSet/GPS"/> https://confluence.ihtsdotools.org/pages/viewpage.action?pageId=96800698 -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-system">
+            <valueCanonical value="http://snomed.info/sct?fhir_vs=refset/787778008"/>
+        </extension>
+      </system>
          <concept>
             <code value="49727002"/>
             <display value="Cough (finding)"/>

@@ -16,7 +16,7 @@
    </contact>
    <description value="ValueSet of patient report outcome observations"/>
    <immutable value="false"/>
-   <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+   <copyright value="The first artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org. The second artefact includes content from the Global Patient set (GPS) sub-set of SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). The Global Patient Set is produced by SNOMED International and is licensed under the Creative Commons Attribution 4.0 International License. The GPS is made available to users at no cost. For more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org"/>
    <compose>
       <include>
          <system value="http://snomed.info/sct"/>
@@ -34,16 +34,7 @@
          </concept>
       </include>
       <include>
-      <system value="http://snomed.info/sct">
-        <!-- SNOMED CT GPS (Global Patient Reference Set: https://refset.ihtsdotools.org/#/directory?refsetId=10975166) -->
-        <!-- <system value="http://snomed.info/sct?fhir_vs=refset/787778008"/> 
-             see https://chat.fhir.org/#narrow/stream/179166-implementers/topic/SNOMED.20Global.20Patient.20Set.20version.20URI
-            but igpbulisher warning: covid-19-prom	warning	Error from server: Unable to provide support for code system http://snomed.info/sct?fhir_vs=refset/787778008  -->
-        <!-- <system value="http://snomed.info/valueSet/GPS"/> https://confluence.ihtsdotools.org/pages/viewpage.action?pageId=96800698 -->
-        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-system">
-            <valueCanonical value="http://snomed.info/sct?fhir_vs=refset/787778008"/>
-        </extension>
-      </system>
+         <system value="http://snomed.info/sct" />
          <concept>
             <code value="49727002"/>
             <display value="Cough (finding)"/>
@@ -140,6 +131,9 @@
                <value value="perte d'odorat"/>
             </designation>
          </concept>
-      </include>
+         <!-- https://chat.fhir.org/#narrow/stream/179202-terminology/topic/Indicating.20in.20a.20ValueSet.20.20SNOMED.20CT.20GPS.20.20Codes -->
+         <valueSet value="http://snomed.info/valueSet/gps" />  <!-- Error from server: Unable to find value set "http://snomed.info/valueSet/gps" (see Tx log) -->
+      <!-- <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/snomed-intl-gps" rror from server: Unable to find value set "http://hl7.org/fhir/uv/ips/ValueSet/snomed-intl-gps" /> -->
+      </include>   
    </compose>
 </ValueSet>

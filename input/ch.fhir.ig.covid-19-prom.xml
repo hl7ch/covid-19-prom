@@ -33,6 +33,13 @@
   <packageId value="ch.fhir.ig.covid-19-prom"/>
   <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
+<!--  
+  <dependsOn id="hl7fhiruvips">
+    <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
+    <packageId value="hl7.fhir.uv.ips"/>
+    <version value="current"/>
+  </dependsOn>
+-->  
   <definition>
     <!-- References to examples -->
     <resource>
